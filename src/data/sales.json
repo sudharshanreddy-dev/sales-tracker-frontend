@@ -1,0 +1,71 @@
+{
+  "products": [
+    "Laptop",
+    "Smartphone",
+    "Tablet",
+    "Desktop PC",
+    "Smart Watch"
+  ],
+  "sales": [
+    {
+      "date": "2024-03-15",
+      "product": "Laptop",
+      "quantity": 3,
+      "amount": 3600
+    },
+    {
+      "date": "2024-03-15",
+      "product": "Smartphone",
+      "quantity": 5,
+      "amount": 2500
+    },
+    {
+      "date": "2024-03-14",
+      "product": "Tablet",
+      "quantity": 4,
+      "amount": 1600
+    },
+    {
+      "date": "2024-03-14",
+      "product": "Desktop PC",
+      "quantity": 2,
+      "amount": 4000
+    },
+    {
+      "date": "2024-03-13",
+      "product": "Smart Watch",
+      "quantity": 8,
+      "amount": 2400
+    },
+    {
+      "date": "2024-03-13",
+      "product": "Laptop",
+      "quantity": 2,
+      "amount": 2400
+    },
+    {
+      "date": "2024-03-12",
+      "product": "Smartphone",
+      "quantity": 6,
+      "amount": 3000
+    },
+    {
+      "date": "2024-03-12",
+      "product": "Tablet",
+      "quantity": 3,
+      "amount": 1200
+    },
+    {
+      "date": "2024-03-11",
+      "product": "Desktop PC",
+      "quantity": 1,
+      "amount": 2000
+    },
+    {
+      "date": "2024-03-11",
+      "product": "Smart Watch",
+      "quantity": 5,
+      "amount": 1500
+    }
+  ]
+}
