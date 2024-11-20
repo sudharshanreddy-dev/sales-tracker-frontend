@@ -1,53 +1,26 @@
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Sidebar from './components/Sidebar';
-// import Dashboard from './components/Dashboard';
-// import Analytics from './components/Analytics';
-// import DataEntry from './components/DataEntry';
-// import './App.css';
-//
-// function App() {
-//   return (
-//       <Router>
-//         <div className="flex min-h-screen bg-[#1a1a1a] text-white">
-//           <Sidebar />
-//           <main className="flex-1 p-6">
-//             <Routes>
-//               <Route path="/" element={<Dashboard />} />
-//               <Route path="/analytics" element={<Analytics />} />
-//               <Route path="/data-entry" element={<DataEntry />} />
-//             </Routes>
-//           </main>
-//         </div>
-//       </Router>
-//   );
-// }
-//
-// export default App;
-
-
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboard';
-import Analytics from './components/Analytics';
-import DataEntry from './components/DataEntry';
-import './App.css';
+import { Provider } from 'react-redux';
+import { store } from './store';
+import Layout from './components/Layout';
+import Dashboard from './pages/Dashboard';
+import Analytics from './pages/Analytics';
+import SaleEntry from './pages/SaleEntry';
+import ManageProducts from './pages/ManageProducts';
 
-function App() {
-    return (
-        <Router>
-            <div className="flex bg-[#1a1a1a] text-white min-h-screen">
-                <Sidebar />
-                <main className="flex-1 ml-64 p-6">
-                    <Routes>
-                        <Route path="/" element={<Dashboard />} />
-                        <Route path="/analytics" element={<Analytics />} />
-                        <Route path="/data-entry" element={<DataEntry />} />
-                    </Routes>
-                </main>
-            </div>
-        </Router>
-    );
+export default function App() {
+  return (
+    <Provider store={store}>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/sale-entry" element={<SaleEntry />} />
+            <Route path="/manage-products" element={<ManageProducts />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </Provider>
+  );
 }
-
-export default App;
-
